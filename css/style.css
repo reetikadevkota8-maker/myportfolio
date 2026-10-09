@@ -1,7 +1,11 @@
 body {
     background-color: pink;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
+}
+
+header {
+    background-color: aliceblue;
 }
 
 .header-container {
@@ -11,9 +15,6 @@ body {
     padding: 10px;
 }
 
-header {
-    background-color: aliceblue;
-}
 nav ul {
     display: flex;
     gap: 20px;
@@ -29,7 +30,7 @@ nav a:hover {
 }
 
 form button {
-    background-color: yellow;
+    background-color: gold;
 }
 
 h1,
@@ -62,18 +63,96 @@ main {
     gap: 2rem;
 }
 
-.about-container img {
-    width: 35%;
-    height: 45%;
-    border-radius: 184px;
-    box-shadow: 2px 0 12px black;
+.about-text {
+    flex: 1;
+    min-width: 0;
 }
-.about-container img:hover {
-    transform: translateY(-5px);
+
+.slider {
+    position: relative;
+    width: 35%;
+    flex-shrink: 0;
+    align-self: center;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 2px 0 12px black;
+    touch-action: pan-y;
+}
+
+.slider-track {
+    display: flex;
+    transition: transform 0.4s ease;
+}
+
+.slider-track img {
+    flex: 0 0 100%;
+    width: 100%;
+    min-width: 0;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    display: block;
+}
+
+.slider .prev,
+.slider .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 44px;
+    border: 0;
+    border-radius: 6px;
+    background: rgba(0, 0, 0, 0.65);
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.slider .prev { left: 8px; }
+.slider .next { right: 8px; }
+
+.slider-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    padding: 4px;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.65);
+}
+
+.slider .dot {
+    width: 28px;
+    height: 28px;
+    padding: 7px;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.slider .dot::before {
+    content: "";
+    display: block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: white;
+}
+
+.slider .dot.active::before { background: gold; }
+.slider button:focus-visible { outline: 3px solid gold; outline-offset: 2px; }
+
+@media (max-width: 1024px) {
+    .slider { width: 100%; max-width: 360px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .slider-track { transition: none; }
 }
 
 .project-container article {
-    background-color: aqua;
+    background-color: white;
     margin-bottom: 1rem;
     box-shadow: 0 5px 12px black;
     padding: 10px;
@@ -87,7 +166,7 @@ main {
 
 .description-list {
     margin-bottom: 1rem;
-    background-color: aqua;
+    background-color: white;
     box-shadow: 0 5px 12px black;
     display: grid;
     border-radius: 10px;
@@ -158,10 +237,15 @@ main {
 
 
 .contact-container {
-    width: 60%
+    width: 100%
 }
 
 .contact-container input,
 .contact-container textarea {
     width: 100%;
+}
+
+.t-box {
+    max-width: 250px;
+    min-width: 100px;
 }

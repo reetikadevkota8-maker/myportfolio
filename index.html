@@ -4,262 +4,435 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">"
+    <link rel="stylesheet" href="css/style.css">
     <title>My Portfolio</title>
 </head>
 
 <body>
+
     <header>
         <div class="header-container">
+
             <div class="logo">
-                <img src="images/logo.png" alt="Logo" width="80">
+                <img src="images/logo.png"
+                    alt="Logo"
+                    width="100"
+                    height="100">
             </div>
+
             <div class="nav-bar">
                 <nav>
                     <ul>
                         <li><a href="#">Home</a></li>
                         <li><a href="#AboutMe">About Me</a></li>
                         <li><a href="#MyProjects">My Projects</a></li>
-                        <li><a href="#MySkills"> My Skills</a></li>
+                        <li><a href="#MySkills">My Skills</a></li>
                         <li><a href="#Education">Education</a></li>
                         <li><a href="#ContactMe">Contact</a></li>
                     </ul>
                 </nav>
             </div>
+
             <div class="search-bar">
                 <form>
                     <input type="text" placeholder="Search">
-                    <button type="Submit">Search</button>
+                    <button type="submit">Search</button>
                 </form>
             </div>
+
         </div>
     </header>
-    <main>
-        <section id="AboutMe">
-            <div class="about-container">
-                <div class="about-text">
-                    <h1>
-                        About Me
-                    </h1>
-                    <p>
-                        My name is Ritika Devkota, and I am from Imadol, Lalitpur, Nepal. I completed my +2 education
-                        from D.A.V. Sushil Kedia Vishwa Bharati, Jawalakhel, Lalitpur. Currently, I am pursuing my
-                        Bachelor’s
-                        degree at Model Institute of Technology (MIT), affiliated with International American
-                        University.
 
-                        I consider myself an honest, punctual, hardworking, and self-motivated person. I always try to
-                        learn
-                        from my experiences and improve myself both personally and academically. My main goal is to
-                        maintain
-                        a
-                        good GPA throughout my studies while developing practical and field-related skills that will
-                        help me
+
+    <main>
+
+        <!-- About Me -->
+        <section id="AboutMe">
+
+            <div class="about-container">
+
+                <div class="about-text">
+
+                    <h1>About Me</h1>
+
+                    <p>
+                        My name is Ritika Devkota, and I am from Imadol, Lalitpur,
+                        Nepal. I completed my +2 education from D.A.V. Sushil Kedia
+                        Vishwa Bharati, Jawalakhel, Lalitpur. Currently, I am pursuing
+                        my Bachelor's degree at Model Institute of Technology (MIT),
+                        affiliated with International American University.
+
+                        I consider myself an honest, punctual, hardworking, and
+                        self-motivated person. I always try to learn from my experiences
+                        and improve myself both personally and academically. My main
+                        goal is to maintain a good GPA throughout my studies while
+                        developing practical and field-related skills that will help me
                         build a successful career.
 
-                        Apart from academics, I enjoy in learning new skills and gaining practical experience. I also
-                        want
-                        to gain professional
-                        experience through internships and other opportunities related to my field.
+                        Apart from academics, I enjoy learning new skills and gaining
+                        practical experience. I also want to gain professional experience
+                        through internships and other opportunities related to my field.
 
-                        In the future, I aim to complete my degree successfully, continue developing my professional
-                        skills,
-                        and
-                        build a stable and successful career. I believe that consistent effort, a positive attitude, and
-                        a
-                        willingness to learn are important for achieving my goals.
+                        In the future, I aim to complete my degree successfully,
+                        continue developing my professional skills, and build a stable
+                        and successful career. I believe that consistent effort,
+                        a positive attitude, and a willingness to learn are important
+                        for achieving my goals.
                     </p>
+
                 </div>
-                <img src="images/professional.jpeg" alt="Logo">
+
+
+                <div class="slider"
+                    role="region"
+                    aria-label="Profile photos"
+                    tabindex="0">
+
+                    <div class="slider-track">
+
+                        <img src="images/professional.jpeg"
+                            alt="Professional profile photo"
+                            draggable="false">
+
+                        <img src="images/profile2.jpeg"
+                            alt="Profile photo 2"
+                            draggable="false">
+
+                        <img src="images/profile3.jpeg"
+                            alt="Profile photo 3"
+                            draggable="false">
+
+                        <img src="images/profile4.jpeg"
+                            alt="Profile photo 4"
+                            draggable="false">
+
+                        <img src="images/profile5.jpeg"
+                            alt="Profile photo 5"
+                            draggable="false">
+
+                    </div>
+
+                    <button class="prev"
+                        type="button"
+                        aria-label="Previous photo">
+                        &#10094;
+                    </button>
+
+                    <button class="next"
+                        type="button"
+                        aria-label="Next photo">
+                        &#10095;
+                    </button>
+
+                    <div class="slider-dots"
+                        aria-label="Choose a photo">
+                    </div>
+
+                </div>
+
             </div>
+
         </section>
 
+
+        <!-- My Projects -->
         <section id="MyProjects">
+
             <div class="project-container">
-                <h1>
-                    My Projects
-                </h1>
+
+                <h1>My Projects</h1>
+
+
                 <article>
+
                     <h2>Student Record Management System</h2>
-                    <p> I developed a Student Record Management System as a basic programming project. I created this
-                        system
-                        to store and manage student information in an organized way. I included details such as student
-                        name, ID, course, and marks. I added features that allow users to add, view, search, update, and
-                        delete student records. While working on this project, I practiced programming logic, functions,
-                        data organization, and user input. This project helped me understand how I can use programming
-                        to
-                        make record management easier and more efficient.
-                    </p>
-                </article>
-                <article>
-                    <h2>Library Managemement System</h2>
+
                     <p>
-                        I developed a Library Management System using C programming. I created this project to manage
-                        books
-                        and users in a simple and organized way. I added features that allow users to add, display,
-                        search,
-                        borrow, return, and delete books. While developing this project, I used structures, arrays,
-                        functions, pointers, and file handling. By working on this project, I improved my programming
-                        skills
-                        and learned how I can use C programming to create a practical application.
+                        I developed a Student Record Management System as a basic
+                        programming project. I created this system to store and manage
+                        student information in an organized way. I included details such
+                        as student name, ID, course, and marks. I added features that
+                        allow users to add, view, search, update, and delete student
+                        records. While working on this project, I practiced programming
+                        logic, functions, data organization, and user input. This project
+                        helped me understand how programming can make record management
+                        easier and more efficient.
                     </p>
+
                 </article>
+
+
                 <article>
+
+                    <h2>Library Management System</h2>
+
+                    <p>
+                        I developed a Library Management System using C programming.
+                        I created this project to manage books and users in a simple
+                        and organized way. I added features that allow users to add,
+                        display, search, borrow, return, and delete books. While
+                        developing this project, I used structures, arrays, functions,
+                        pointers, and file handling. By working on this project, I
+                        improved my programming skills and learned how C programming
+                        can be used to create a practical application.
+                    </p>
+
+                </article>
+
+
+                <article>
+
                     <h2>Personal Portfolio Website</h2>
+
                     <p>
-                        I created a Personal Portfolio Website using HTML and CSS. I designed the website to introduce
-                        myself and display my education, skills, hobbies, and projects. I created different sections
-                        such as
-                        About Me, Education, Skills, Projects, and Contact. I used CSS to improve the layout, colors,
-                        fonts,
-                        and overall design of my website. Through this project, I improved my web development skills and
-                        learned how I can create a simple and user-friendly webs
+                        I created a Personal Portfolio Website using HTML and CSS.
+                        I designed the website to introduce myself and display my
+                        education, skills, hobbies, and projects. I created different
+                        sections such as About Me, Education, Skills, Projects, and
+                        Contact. I used CSS to improve the layout, colors, fonts, and
+                        overall design of my website. Through this project, I improved
+                        my web development skills and learned how to create a simple
+                        and user-friendly website.
                     </p>
+
                 </article>
+
             </div>
+
         </section>
+
+
         <section id="MySkills">
+
             <div class="skills-container">
-                <h1> My Skills</h1>
+
+                <h1>My Skills</h1>
+
                 <dl class="description-grid">
-                    <div class="description-list">
-                        <dt><b>Programming Language </b></dt>
-                        <dd>Java Script, PHP </dd>
-                    </div>
-                    <div class="description-list">
-                        <dt><b>Database</b></dt>
-                        <dd>MySQL, MangoDB </dd>
-                    </div>
-                    <div class="description-list">
-                        <dt><b>Tools</b></dt>
-                        <dd> VsCode, Powerpoint, Excel, MS word </dd>
-                    </div>
+
 
                     <div class="description-list">
-                        <dt><b>Framework</b></dt>
-                        <dd>Django, Laravel </dd>
+
+                        <dt>
+                            <b>Programming Languages</b>
+                        </dt>
+
+                        <dd>
+                            JavaScript, PHP
+                        </dd>
+
                     </div>
+
+
+                    <div class="description-list">
+
+                        <dt>
+                            <b>Database</b>
+                        </dt>
+
+                        <dd>
+                            MySQL, MongoDB
+                        </dd>
+
+                    </div>
+
+
+                    <div class="description-list">
+
+                        <dt>
+                            <b>Tools</b>
+                        </dt>
+
+                        <dd>
+                            VS Code, PowerPoint, Excel, Microsoft Word
+                        </dd>
+
+                    </div>
+
+
+                    <div class="description-list">
+
+                        <dt>
+                            <b>Frameworks</b>
+                        </dt>
+
+                        <dd>
+                            Django, Laravel
+                        </dd>
+
+                    </div>
+
+                </dl>
+
             </div>
-            </dl>
+
         </section>
+
+
         <section id="Education">
+
             <div class="education-container">
+
                 <h1>Education</h1>
+
                 <table border="1">
+
                     <thead>
+
                         <tr>
-                            <th> S.N.</th>
+                            <th>S.N.</th>
                             <th>Level</th>
                             <th>Completion Date</th>
                             <th>Institution</th>
                             <th>GPA</th>
                             <th>Grade</th>
                         </tr>
+
                     </thead>
+
+
                     <tbody>
+
                         <tr>
                             <td>1</td>
                             <td>SEE</td>
                             <td>2022</td>
-                            <td>Hope valley scholars School</td>
+                            <td>Hope Valley Scholars School</td>
                             <td>3.25</td>
                             <td>A</td>
                         </tr>
+
+
                         <tr>
                             <td>2</td>
                             <td>+2</td>
                             <td>2025</td>
-                            <td>D.A.V Sushil Kedia Vishwa Bharti College</td>
+                            <td>D.A.V. Sushil Kedia Vishwa Bharati College</td>
                             <td>3.58</td>
                             <td>A</td>
                         </tr>
+
+
                         <tr>
                             <td>3</td>
                             <td>Bachelors</td>
                             <td>Ongoing</td>
                             <td>Model Institute of Technology</td>
-                            <td>ongoing</td>
-                            <td>ongoing</td>
+                            <td>Ongoing</td>
+                            <td>Ongoing</td>
                         </tr>
+
                     </tbody>
+
                 </table>
+
             </div>
+
         </section>
+
         <section id="ContactMe">
+
             <div class="contact-container">
-                <h1> Contact Me</h1>
+
+                <h1>Contact Me</h1>
+
                 <form>
-                    <label>Name</label><br>
-                    <input type="text" placeholder="Name"><br>
-                    <label>Email</label><br>
-                    <input type="email" placeholder="Email"><br>
-                    <label>Message</label><br>
-                    <textarea placeholder="Message...."></textarea><br>
-                    <button type="submit">Send</button>
+
+                    <label for="name">Name</label>
+                    <br>
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Name">
+
+                    <br>
+
+
+                    <label for="email">Email</label>
+                    <br>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Email">
+
+                    <br>
+
+
+                    <label for="message">Message</label>
+                    <br>
+
+                    <textarea
+                        id="message"
+                        class="t-box"
+                        placeholder="Message...."></textarea>
+
+                    <br>
+
+                    <button type="submit">
+                        Send
+                    </button>
+
                 </form>
+
             </div>
+
         </section>
+
     </main>
+
     <footer>
-        <h2>Find Me On </h2>
-        <a href="https://www.instagram.com/" target="_blank">
-            <img src="images/instagram.avif" alt="logo" width="40" height="40"></a>
 
-        <a href="https://www.linkedin.com/" target="_blank">
-            <img src="images/linkedin.jpeg" alt="logo" width="40" height="40">
-        </a>
+        <div class="find-container">
 
-        <a href="https://www.facebook.com/" target="_blank">
-            <img src="images/facebook.webp" width="40" height="40" alt="logo">
-        </a>
+            <h2>Find Me On</h2>
 
 
-        &copy; copyright &copy; 2026 Reetika Devkota. All rights reserved.
+            <a href="https://www.instagram.com/"
+                target="_blank">
+
+                <img src="images/instagram.avif"
+                    alt="Instagram"
+                    width="40"
+                    height="40">
+
+            </a>
+
+
+            <a href="https://www.linkedin.com/"
+                target="_blank">
+
+                <img src="images/linkedin.jpeg"
+                    alt="LinkedIn"
+                    width="40"
+                    height="40">
+
+            </a>
+
+
+            <a href="https://www.facebook.com/"
+                target="_blank">
+
+                <img src="images/facebook.webp"
+                    alt="Facebook"
+                    width="40"
+                    height="40">
+
+            </a>
+
+        </div>
+
+
+        <p>
+            &copy; 2026 Ritika Devkota. All rights reserved.
+        </p>
+
     </footer>
+
+
+    <script src="js/script.js"></script>
+
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
